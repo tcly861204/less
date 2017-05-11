@@ -1,0 +1,32 @@
+/*@import "../config/config.less";
+html,body{
+    width: 100%;
+    height: 100%;
+    border:1px solid #ccc;
+    padding: 0;
+    margin: 0;
+}
+.box{
+    width: @r;
+    height:100px;
+}*/
+
+
+.box{
+    //老版
+    display: -webkit-box;
+    //新版
+    display: flex;
+    // flex-direction:column;
+    flex-direction: row-reverse;
+    //水平
+    -webkit-box-orient: horizontal;
+    // 垂直
+    -webkit-box-orient: vertical;
+}
+.box div{
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    margin: auto;
+}
