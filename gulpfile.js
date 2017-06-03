@@ -1,16 +1,10 @@
-var gulp = require('gulp'),
-    less = require('gulp-less'),
-    cssmin = require('gulp-minify-css');
+var gulp = require('gulp');
+var sass = require('gulp-ruby-sass');
 
-gulp.task('Less', function() {
-    gulp.src('style/*.less')
-        .pipe(less())
-        .pipe(cssmin())
-        .pipe(gulp.dest('css/'));
-});
-
-
-
-gulp.task("watchLess", function() {
-    gulp.watch("style/*.less", ['Less']);
+gulp.task('sass',function(){
+	return sass('style/main.scss')
+	.on('error',function(err){
+		console.log("Error",err.message);
+	})
+	.pipe(gulp.dest('css/'));
 });
