@@ -1,6 +1,6 @@
 # SASS学习
 
-###gulp-ruby-sass
+### gulp-ruby-sass
 gulp-ruby-sass是调用sass，所以需要ruby环境，需要生成临时目录和临时文件
 
 ```
