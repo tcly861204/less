@@ -8,3 +8,10 @@ gulp.task('sass',function(){
 	})
 	.pipe(gulp.dest('css/'));
 });
+
+gulp.task('watch',function(){
+	gulp.watch('style/*.scss',['sass']);
+});
+
+
+gulp.task('default',['watch']);
