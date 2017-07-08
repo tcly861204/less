@@ -1,1 +1,1 @@
-.box{display:-webkit-box;display:flex;flex-direction:row-reverse;-webkit-box-orient:horizontal;-webkit-box-orient:vertical}.box div{width:100px;height:100px;background:red;margin:auto}
+@charset 'utf-8';.clearfix{zoom:1}.clearfix:after{content:'';display:block;clear:both}.test{width:calc(300px-50px)}.sanjiao{border-width:100px;border-color:transparent transparent #ccc;border-style:dashed dashed solid;width:0;height:0;overflow:hidden}

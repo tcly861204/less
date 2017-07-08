@@ -1,32 +1,15 @@
-/*@import "../config/config.less";
-html,body{
-    width: 100%;
-    height: 100%;
-    border:1px solid #ccc;
-    padding: 0;
-    margin: 0;
+@charset 'utf-8';
+@import (less) 'basic.less';
+.test{
+    //避免编译
+    width:~'calc(300px-50px)';
 }
-.box{
-    width: @r;
-    height:100px;
-}*/
+
+.border_arg(@w:30px,@c:red,@line:solid){
+    border:@arguments;
+}
 
 
-.box{
-    //老版
-    display: -webkit-box;
-    //新版
-    display: flex;
-    // flex-direction:column;
-    flex-direction: row-reverse;
-    //水平
-    -webkit-box-orient: horizontal;
-    // 垂直
-    -webkit-box-orient: vertical;
-}
-.box div{
-    width: 100px;
-    height: 100px;
-    background: #f00;
-    margin: auto;
+.sanjiao{
+    .triangle(top,100px);
 }
