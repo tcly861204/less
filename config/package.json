@@ -1,0 +1,24 @@
+{
+    "name": "less",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^7.1.2",
+        "cssnext": "^1.8.4",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^3.9.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-less": "^3.3.0",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-order": "^1.1.1",
+        "gulp-postcss": "^7.0.0",
+        "precss": "^2.0.0",
+        "browser-sync": "^2.18.13"
+    }
+}
