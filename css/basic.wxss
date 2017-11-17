@@ -1,0 +1,1 @@
+body{padding:15px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}@media print{#header,#footer{display:none}}@font-face{font-family:Geo;font-style:normal;src:url("fonts/geo_sans_light/GensansLight.ttf")}.ingeo{font-family:Geo}
