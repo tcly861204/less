@@ -34,4 +34,16 @@ const forEachFile = (rootPath, arr) => {
         }
     });
 }
-forEachFile('', webConfig);
+
+process.stdin.resume();
+process.stdout.write('请为构建的项目取一个文件夹名称:');
+process.stdin.on('data',function(chunk){
+    var fileName = chunk.toString();
+    if(fileName){
+        webConfig[0].name = fileName.trim().replace(/[\r\n]/g,"");
+    }
+    forEachFile('', webConfig);
+    setTimeout(function(){
+        process.abort();
+    },100);
+});
